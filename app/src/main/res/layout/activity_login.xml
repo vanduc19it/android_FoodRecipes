@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/login">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:text="Đăng Nhập"
+        android:textSize="34sp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textColor="#F44336"/>
+
+    <EditText
+        android:background="@drawable/custom_button"
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="151dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Email"
+        android:textColorHint="#FF9800"/>
+
+    <EditText
+        android:background="@drawable/custom_button"
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="235dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Mật khẩu"
+        android:textColorHint="#FF9800"/>
+
+    <Button
+        android:background="@drawable/custom_image_search"
+        android:id="@+id/button2"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="327dp"
+        android:text="Đăng nhập"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:textColor="#3703F4"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="107dp"
+        android:layout_marginRight="107dp"
+        android:layout_marginBottom="251dp"
+        android:text="Bạn quên mất mật khẩu?"
+        android:textColor="#4CAF50"
+        android:textSize="18sp"
+        android:textStyle="italic"/>
+</RelativeLayout>
