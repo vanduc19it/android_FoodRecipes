@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Food Recipes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="mondaluu_fragment">Món đã lưu</string>
+    <string name="moncuatoi_fragment">Món của tôi</string>
+    <string name="bosuutap_fragment">Bộ sưu tập</string>
 </resources>
