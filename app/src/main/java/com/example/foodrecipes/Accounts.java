@@ -11,7 +11,10 @@ import androidx.viewpager.widget.ViewPager;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.tabs.TabLayout;
@@ -23,11 +26,27 @@ public class Accounts extends AppCompatActivity {
 //    private TabLayout mTabLayout;
 //    private ViewPager mViewpager;
 
-
+      TextView xemthongtin;
+      Button btnEdit;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accounts);
+
+        xemthongtin = findViewById(R.id.xeminfor);
+        xemthongtin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),Xemthongtin.class));
+            }
+        });
+        btnEdit = findViewById(R.id.btneditacount);
+        btnEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(),UpdateAcount.class));
+            }
+        });
 
 //        mTabLayout = findViewById(R.id.tab_layout);
 //        mViewpager = findViewById(R.id.view_pager);
@@ -101,4 +120,5 @@ public class Accounts extends AppCompatActivity {
 //        }
 //        return super.onOptionsItemSelected(item);
 //    }
+
 }

@@ -9,17 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodRecipes">
-        <activity android:name=".Accounts"></activity>
+        <activity android:name=".UpdateAcount"></activity>
+        <activity android:name=".Xemthongtin" />
+        <activity android:name=".Accounts" />
         <activity android:name=".Messages" />
         <activity android:name=".add_foods" />
         <activity android:name=".search_foods" />
-        <activity android:name=".register">
-
-        </activity>
-        <activity android:name=".Login" >
-
-        </activity>
-        <activity android:name=".MainActivity" >
+        <activity android:name=".register" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
