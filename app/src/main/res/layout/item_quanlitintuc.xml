@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="6dp"
+    app:cardCornerRadius="6dp"
+
+    android:id="@+id/cardview">
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:stretchColumns="1,2,3">
+
+            <TableRow>
+                <TextView
+                    android:background="@drawable/custom_bang"
+                    android:layout_width="100dp"
+                    android:id="@+id/tieude"
+                    android:text="Tiêu đề"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="200dp"
+                    android:layout_column="1"/>
+
+                <TextView
+                    android:padding="20dp"
+                    android:background="@drawable/custom_bang"
+                    android:layout_width="100dp"
+                    android:id="@+id/ngaydang"
+                    android:text="Ngày đăng"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="200dp"
+                    android:layout_column="1" />
+
+                <TextView
+                    android:background="@drawable/custom_bang"
+                    android:layout_width="100dp"
+                    android:id="@+id/nguon"
+                    android:text="Nguồn"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_column="1"
+                    android:layout_height="200dp"/>
+
+            </TableRow>
+
+</TableLayout>
+</androidx.cardview.widget.CardView>

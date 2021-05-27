@@ -9,16 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodRecipes">
-        <activity android:name=".DangCongThuc">
+        <activity android:name=".ThemTinTuc">
+
+        </activity>
+        <activity android:name=".SuaDanhMuc"></activity>
+        <activity android:name=".ThemDanhMuc"></activity>
+        <activity android:name=".DuyetMonAn" />
+        <activity android:name=".QuanLyTintuc">
+        </activity>
+        <activity android:name=".QuanLyDanhmuc"></activity>
+        <activity android:name=".QuanLyUser">
+
+        </activity>
+        <activity android:name=".QuanLyCongThuc">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".detail">
-
-        </activity>
+        <activity android:name=".QuanLyComment"></activity>
+        <activity android:name=".ThongKe" />
+        <activity android:name=".Quantri" />
+        <activity android:name=".DangCongThuc" />
+        <activity android:name=".detail" />
         <activity android:name=".UpdateAcount" />
         <activity android:name=".Xemthongtin" />
         <activity android:name=".Accounts" />
@@ -27,7 +41,7 @@
         <activity android:name=".search_foods" />
         <activity android:name=".register" />
         <activity android:name=".Login" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
