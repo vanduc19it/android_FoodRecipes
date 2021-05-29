@@ -22,16 +22,18 @@
 
         </activity>
         <activity android:name=".QuanLyCongThuc">
+
+        </activity>
+        <activity android:name=".QuanLyComment"></activity>
+        <activity android:name=".ThongKe" />
+        <activity android:name=".Quantri" />
+        <activity android:name=".DangCongThuc" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".QuanLyComment"></activity>
-        <activity android:name=".ThongKe" />
-        <activity android:name=".Quantri" />
-        <activity android:name=".DangCongThuc" />
         <activity android:name=".detail" />
         <activity android:name=".UpdateAcount" />
         <activity android:name=".Xemthongtin" />

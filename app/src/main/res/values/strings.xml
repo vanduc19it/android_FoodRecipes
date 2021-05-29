@@ -4,4 +4,14 @@
     <string name="mondaluu_fragment">Món đã lưu</string>
     <string name="moncuatoi_fragment">Món của tôi</string>
     <string name="bosuutap_fragment">Bộ sưu tập</string>
+
+    <string-array name="danhmuc">
+        <item>Thịt bò</item>
+        <item>Thịt lợn</item>
+        <item>Món gà</item>
+        <item>Đồ uống</item>
+        <item>Món chay</item>
+
+
+    </string-array>
 </resources>
