@@ -4,72 +4,119 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".register"
+    tools:context=".activity.RegisterActivity"
     android:background="@drawable/register">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="75dp"
-        android:text="Đăng ký"
-        android:textColor="#FDFCFC"
-        android:textSize="34sp"
-        android:fontFamily="cursive"
-        android:textStyle="bold"
-        />
 
-    <EditText
-        android:background="@drawable/custom_button"
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="361dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="181dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Nhập tên của bạn"
-        android:textColorHint="@color/teal_700"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <EditText
-        android:background="@drawable/custom_button"
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="361dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="264dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Nhập email"
-        android:textColorHint="@color/teal_700"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <EditText
-        android:background="@drawable/custom_button"
-        android:id="@+id/editTextTextPersonName5"
-        android:layout_width="361dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="347dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Mật khẩu"
-        android:textColorHint="@color/teal_700" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="277dp"
+                android:layout_height="74dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="71dp"
+                android:layout_marginEnd="67dp"
+                android:fontFamily="sans-serif"
+                android:text="Đăng ký"
+                android:textColor="#FDFCFC"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
 
-    <Button
-android:textColor="@color/purple_500"
-        android:id="@+id/button"
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="206dp"
-        android:fontFamily="cursive"
-        android:text="Tạo tài khoản mới"
-        android:textStyle="bold"
-        android:background="@drawable/custom_image_search"/>
+            <EditText
+                android:id="@+id/editText_uesname_regis"
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="69dp"
+                android:layout_marginEnd="28dp"
+
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Nhập tên của bạn"
+                android:inputType="textPersonName"
+                android:textColorHint="#0ACFCF" />
+
+            <EditText
+                android:id="@+id/editText_email"
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_uesname_regis"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="28dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Nhập email"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/teal_200" />
+
+            <EditText
+                android:id="@+id/editText_passWord_regis"
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_email"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="28dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:textColorHint="@color/teal_200" />
+
+            <EditText
+                android:id="@+id/editText_rePassword_regis"
+                android:layout_width="361dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_passWord_regis"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="22dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="28dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:textColorHint="@color/teal_200" />
+
+            <Button
+
+                android:textSize="18dp"
+                android:id="@+id/btn_register"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editText_rePassword_regis"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="206dp"
+                android:background="@drawable/custom_btn_tintuc"
+                android:text="Tạo tài khoản mới"
+                android:textColor="@color/white"
+                 />
+        </RelativeLayout>
+    </ScrollView>
+
 </RelativeLayout>

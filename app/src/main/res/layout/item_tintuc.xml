@@ -1,44 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:layout_height="wrap_content"
-    android:layout_width="wrap_content"
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content">
+
     <androidx.cardview.widget.CardView
-        android:layout_height="wrap_content"
         android:layout_width="wrap_content"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="10dp"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:padding="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
 
 
         >
+
         <ImageView
             android:id="@+id/tintucimg"
             android:layout_width="340dp"
             android:layout_height="230dp"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/ic_launcher"
             android:layout_marginTop="10dp"
-            />
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
         <TextView
-            android:fontFamily="cursive"
             android:id="@+id/motatintuc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mota"
-            android:textSize="20sp"
-            android:textColor="@color/white"
             android:layout_gravity="center"
-            android:gravity="center|bottom"/>
+            android:fontFamily="cursive"
+            android:gravity="center|bottom"
+            android:text="Mota"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
         <Button
-            android:layout_margin="10dp"
-            android:background="@drawable/custom_btn_tintuc"
             android:id="@+id/btnxemthem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_image_search"
             android:text="Xem thêm"
-            android:layout_gravity="center|bottom"/>
+            android:textColor="@color/white"/>
     </androidx.cardview.widget.CardView>
 </LinearLayout>
 
