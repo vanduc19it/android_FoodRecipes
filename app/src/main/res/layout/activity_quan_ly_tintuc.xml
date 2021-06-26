@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuanLyTintuc">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quản lý tin tức"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_margin="10dp" />
+        <Button
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_bang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thêm tin tức"
+            android:textColor="@color/white"
+            />
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:stretchColumns="1,2,3"
+        >
+        <TableRow>
+            <TextView
+                android:layout_width="100dp"
+                android:background="@drawable/custom_bang"
+                android:text="Tiêu đề"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_column="1"/>
+            <TextView
+                android:layout_width="100dp"
+                android:background="@drawable/custom_bang"
+                android:text="Ngày đăng"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_column="1" />
+            <TextView
+                android:layout_width="100dp"
+                android:background="@drawable/custom_bang"
+                android:text="Nguồn"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_column="1" />
+        </TableRow>
+    </TableLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_quanlitintuc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_menu"
+        android:layout_alignParentBottom="true"
+        android:background="#DAEF09"
+        app:itemIconTint="#FBFAF8"
+        app:itemTextColor="#F9FAFA"
+        />
+
+</RelativeLayout>

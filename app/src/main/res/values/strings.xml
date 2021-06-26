@@ -1,6 +1,18 @@
 <resources>
-    <string name="app_name">Food_Recipes</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="app_name">Food Recipes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="mondaluu_fragment">Món đã lưu</string>
+    <string name="moncuatoi_fragment">Món của tôi</string>
+    <string name="bosuutap_fragment">Bộ sưu tập</string>
+
+    <string-array name="danhmuc">
+        <item>Thịt bò</item>
+        <item>Thịt lợn</item>
+        <item>Món gà</item>
+        <item>Đồ uống</item>
+        <item>Món chay</item>
+
+
+    </string-array>
+    <string name="guilaima"><u>Gửi lại mã!</u></string>
 </resources>
